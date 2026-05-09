@@ -1,0 +1,21 @@
+.Calender{
+    width:40%;
+    margin:auto;
+    
+    background-color: rgb(255, 15, 151);
+    height:500px;
+}
+.Header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+body{
+    background: linear-gradient(45deg, red,blue);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,31 @@
+.ReminderSection{
+    border:1px solid black;
+    border-radius: 15px;
+    width:80%;
+    height:100vh;
+    background-color: rgb(255, 15, 151);
+    margin:76px;
+    text-align: center;
+    text-decoration:underline;
+    font-family:'Times New Roman', Times, serif;
+}
+input{
+    width:250px;
+    height:30px;
+}
+button{
+    border-radius: 35px;
+    height:25px;
+    width:50px;
+}
+button{
+    transition: 0.3s ease;
+}
+button:hover{
+    transform:scale(1.1);
+}
+body{
+    background: linear-gradient(45deg, red, blue);
+    justify-content: center;
+    align-items: center;
+}
