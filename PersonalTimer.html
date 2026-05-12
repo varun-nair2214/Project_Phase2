@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Timer</title>
     <link href="Timer.css" rel="stylesheet">
+    <style>
+        a{
+            font-size: 22px;
+            position: absolute;
+            left:10px;
+            top:10px;
+            border-radius: 5px;
+            width: 55px;
+            height: 25px;
+            text-align: center;
+            align-content: center;
+            border: 1px solid black;
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
+    <a href="Timer.html">Back</a>
     <div class="Group">
             <h1>Timer</h1>
+            <input type="number" id="TimerMin" min="0" max="60" placeholder="Enter Time:" required>
             <hr>
             <p class="Timer" id="Timer2">00:00</p>
                 <div class="Buttons">
@@ -16,6 +33,7 @@
                     <button id="Stop2">Stop</button>
                     <button id="Reset2">Reset</button>
                 </div>
-        </div>
+    </div>
+    <script src="PersonalTimer.js"></script>
 </body>
 </html>

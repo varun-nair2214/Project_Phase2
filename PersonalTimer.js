@@ -1,10 +1,11 @@
-const start = document.getElementById("Start1");
-const stop = document.getElementById("Stop1");
-const reset = document.getElementById("Reset1");
-const timer = document.getElementById("Timer1");
+const start = document.getElementById("Start2");
+const stop = document.getElementById("Stop2");
+const reset = document.getElementById("Reset2");
+const timer = document.getElementById("Timer2");
 
-let timeLeft = 1500;
-let interval;
+const minutesInput = document.getElementById("TimerMin");
+let timeLeft = 0;
+let interval = null;
 
 function updateTimer(){
     const minutes = Math.floor(timeLeft/60);
@@ -15,6 +16,16 @@ function updateTimer(){
 
 function startTimer(){
     if(interval) return;
+    if (timeLeft === 0){
+        const userMinutes = parseInt(minutesInput.value);
+
+        if (isNaN(userMinutes) || userMinutes < 1 || userMinutes > 60){
+            alert("Enter a valid number between 1 and 60");
+            return;
+        }
+        timeLeft = userMinutes*60;
+    }
+    updateTimer();
     interval = setInterval(() => {
         timeLeft--;
         updateTimer();
@@ -23,8 +34,6 @@ function startTimer(){
             clearInterval(interval);
             interval=null;
             alert("Time's up! Hope you used your time effectively :)");
-            timeLeft = 1500;
-            updateTimer();
         }
     },1000)
 }
@@ -35,7 +44,7 @@ const stopTimer = () => {
 };
 const resetTimer = () => {
     clearInterval(interval);
-    timeLeft = 1500;
+    timeLeft = 0;
     updateTimer();
 };
 

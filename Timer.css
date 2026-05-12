@@ -25,6 +25,8 @@ button:hover{
     flex-wrap: wrap;
     flex-direction: row;
     gap:20px;
+    text-align: center;
+    justify-content: center;
 }
 .Group{
     border: 2px double white;
@@ -55,4 +57,7 @@ body{
     align-items: center;
     height: 100vh;
     background: linear-gradient(45deg, red, blue)
+}
+#TimerMin{
+    width:120px;
 }
