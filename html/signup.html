@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up – Smart Study Planner</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+ 
+    <!-- Logo / Site Name -->
+    <div class="site-header">
+        <div class="logo">📚<span>Edu</span>Track</div>
+    </div>
+ 
+    <!-- Sign Up Card -->
+    <div class="card">
+        <h2>Create Account ✏️</h2>
+        <p class="subtitle">Join thousands of students studying smarter</p>
+ 
+        <hr class="divider">
+ 
+        <!-- Sign Up Form -->
+        <form action="#" method="post">
+ 
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="e.g. Riya Sharma"
+                    required
+                >
+            </div>
+ 
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </div>
+ 
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a strong password"
+                    required
+                >
+            </div>
+ 
+            <button type="submit" class="btn-primary">Sign Up →</button>
+ 
+        </form>
+ 
+        <!-- Redirect to Login -->
+        <p class="redirect-text">
+            Already have an account? <a href="login.html">Login</a>
+        </p>
+    </div>
+ 
+    <p class="site-footer">Smart Study Planner &copy; 2025</p>
+    ```html id="t52y5o"
+<script>
+
+    // Select the form
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function(event) {
+
+        // Prevent form submission
+        event.preventDefault();
+
+        // Get input values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Name validation
+        if (name.trim() === "") {
+            alert("Please enter your full name");
+            return;
+        }
+
+        // Email validation
+        if (!email.includes("@")) {
+            alert("Email must contain @ symbol");
+            return;
+        }
+
+        // Password length check
+        if (password.length < 8) {
+            alert("Password must contain at least 8 characters");
+            return;
+        }
+
+        // Number check
+        let numberCheck = /[0-9]/.test(password);
+
+        // Special character check
+        let specialCheck = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+        if (!numberCheck) {
+            alert("Password must contain at least one number");
+            return;
+        }
+
+        if (!specialCheck) {
+            alert("Password must contain at least one special character");
+            return;
+        }
+
+        // Success message
+        alert("Account Created Successfully!");
+
+    });
+
+</script>
+```
+
+ 
+</body>
+</html>
