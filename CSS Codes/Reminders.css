@@ -1,0 +1,79 @@
+.ReminderSection{
+    border:1px solid black;
+    border-radius: 15px;
+    width:80%;
+    min-height:100vh;
+    background-color: #EBDCF5;
+    margin:76px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+h1{
+    color: #6A4C93;
+}
+input{
+    width:250px;
+    height:30px;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+}
+button{
+    border-radius: 35px;
+    height:35px;
+    width:80px;
+    background-color: #C8A2C8;
+}
+button{
+    transition: 0.3s ease;
+}
+button:hover{
+    transform:scale(1.1);
+    background-color: #8E6BBE;
+}
+body{
+    background: #F8F3FC;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    margin: 15px auto;
+    padding: 12px;
+    width:60%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.task-left{
+    display:flex;
+    align-items: center;
+    gap:15px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+input[type="checkbox"]{
+    width:20px;
+    height:20px;
+}
+.deleteBtn{
+    background-color: rgb(161, 89, 89);
+    color:white;
+    border:none;
+
+    width:40px;
+    height: 40px;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: 18px;
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
