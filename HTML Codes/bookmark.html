@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmark</title>
+  <link rel="stylesheet" href="bookmark.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      
+      <div>
+        <h1>EduTrack</h1>
+        
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+       <a href="contact.html">Contact</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <section class="bookmark-section">
+
+    <!-- LEFT -->
+    <div class="left">
+      <h2>Bookmark</h2>
+      <p class="subtitle">
+        Save links and important notes in one place.
+      </p>
+
+      <div class="form-card">
+        <h3>Add Bookmark</h3>
+
+        <select id="bookmarkType" onchange="changeType()">
+          
+          <option value="link">External Link</option>
+          
+        </select>
+
+        <input type="text" id="bookmarkTitle" placeholder="Enter title">
+
+        <input type="text" id="bookmarkLink" placeholder="Paste link">
+
+        <select id="notesDropdown" style="display:none;"></select>
+
+        <button onclick="addBookmark()">+ Save Bookmark</button>
+      </div>
+
+      <div id="bookmarkList" class="list"></div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+      <div class="bookmark-circle">
+        <h3 id="bookmarkCount">0</h3>
+        <p>Total Bookmarks</p>
+      </div>
+
+      <div class="board-box">
+        <h3>Keep everything one click away.</h3>
+        <p>Access your notes and resources instantly.</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<script src="bookmark.js"></script>
+</body>
+</html>
