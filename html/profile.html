@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduTrack - Profile</title>
+
+  <link rel="stylesheet" href="../css/style1.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">EduTrack</div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Profile Section -->
+  <section class="container">
+    <div class="profile-card card">
+
+      <!-- Profile Image -->
+      <div class="profile-header">
+        <img
+          src="https://ui-avatars.com/api/?name=Anandu&background=8E6BBE&color=fff&size=200"
+          alt="Profile Picture"
+          class="profile-image"
+        />
+        <h1 id="profileName" class="editable" onclick="makeEditable(this, 'profileName')">Riya</h1>
+        <p class="profile-role">Student</p>
+      </div>
+
+      <!-- Profile Details -->
+      <div class="profile-details">
+        <div class="detail-item">
+          <i class="fas fa-envelope"></i>
+          <span id="profileEmail">riya123@example.com</span>
+        </div>
+
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span id="profilePlace" class="editable" onclick="makeEditable(this, 'profilePlace')">Kollam, Kerala</span>
+        </div>
+
+        <div class="detail-item">
+          <i class="fas fa-graduation-cap"></i>
+          <span id="profileAmb" class="editable" onclick="makeEditable(this, 'profileAmb')">Engineering Aspirant</span>
+        </div>
+
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span id="profileSkills" class="editable" onclick="makeEditable(this, 'profileSkills')">HTML, CSS, JavaScript, C++</span>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="profile-stats">
+        <div class="stat-box">
+          <h3 id="tasksCount">0</h3>
+          <p>Tasks Planned</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 id="notesCount">1</h3>
+          <p>Notes Saved</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>7</h3>
+          <p>Day Streak</p>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="about-section">
+        <h2>About Me</h2>
+        <p id="profileAbout" class="editable about-text" onclick="makeEditable(this, 'profileAbout')">Passionate student who 
+        enjoys coding, mathematics, and sports.</p>
+      </div>
+
+      <!-- Edit Button -->
+      <button id="editProfileBtn" onclick="editProfile()">Edit Profile</button>
+
+    </div>
+  </section>
+
+  <script src="../javascript/script.js"></script>
+</body>
+</html>
