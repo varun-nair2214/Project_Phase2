@@ -9,11 +9,12 @@ The core features of this website are:
 3) Bookmark: The students often come across important resources and notes available online, but saving them improperly is a waste of their time and will not help them. Bookmarks help them to add their favorite websites, videos, files or notes for further reference.
 4) Reminder : It is not easy to remember tasks to be done. Especially if there are important deadlines to cover, it is better to stay informed all the time. And to remind the student of the same, we have the reminders. Where a student can add a reminder, check it upon completion and delete it if necessary.
 5) Notes: Students can create personal notes and jot down their points and accesss them all from one place with convenience.
-6) Contact: Provides contact details of the engineers who created the website.
-7) login: A login page to keep track of the users of the websites and to avoid data lose.
-8) SignUp: A signup page for students using the website for the first time.
-9) Profile: Students get to update their own profiles for individuality.
-10) Home: The home page is the cluster of all the aforementioned features. It shows the progress of the student in their academic journey.
+6) Quiz: The quiz page in index.html is designed to display and manage the complete quiz experience for the user. Users can either play a predefined quiz or create their own custom quiz using the “Create Your Own Quiz” option on the home screen.
+7) Contact: Provides contact details of the engineers who created the website.
+8) login: A login page to keep track of the users of the websites and to avoid data lose.
+9) SignUp: A signup page for students using the website for the first time.
+10) Profile: Students get to update their own profiles for individuality.
+11) Home: The home page is the cluster of all the aforementioned features. It shows the progress of the student in their academic journey.
 
 Team members and theri roles:
 1) Mehrin S = Create Login ,SignUp and Quiz page.
