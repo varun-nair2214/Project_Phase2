@@ -11,8 +11,9 @@ The core features of this website are:
 5) Notes: Students can create personal notes and jot down their points and accesss them all from one place with convenience.
 6) Contact: Provides contact details of the engineers who created the website.
 7) login: A login page to keep track of the users of the websites and to avoid data lose.
-8) Profile: Students get to update their own profiles for individuality.
-9) Home: The home page is the cluster of all the aforementioned features. It shows the progress of the student in their academic journey.
+8) SignUp: A signup page for students using the website for the first time.
+9) Profile: Students get to update their own profiles for individuality.
+10) Home: The home page is the cluster of all the aforementioned features. It shows the progress of the student in their academic journey.
 
 Team members and theri roles:
 1) Mehrin S = Create Login ,SignUp and Quiz page.
