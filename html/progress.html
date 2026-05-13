@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduTrack - Progress</title>
+
+  <link rel="stylesheet" href="../css/style1.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">EduTrack</div>
+
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Progress Section -->
+  <section class="container">
+    <div class="card progress-card">
+      <h1>📊 Progress Dashboard</h1>
+      <p>Track your study performance and productivity.</p>
+
+      <!-- Summary Boxes -->
+      <div class="progress-stats">
+        <div class="stat-box">
+          <h3 id="totalTasks">0</h3>
+          <p>Total Tasks</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 id="completedTasks">0</h3>
+          <p>Completed</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 id="completionRate">0%</h3>
+          <p>Success Rate</p>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="chart-container">
+        <canvas id="progressChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="../javascript/script.js"></script>
+</body>
+</html>
