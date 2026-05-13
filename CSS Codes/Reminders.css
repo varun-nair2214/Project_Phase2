@@ -1,10 +1,10 @@
 .ReminderSection{
-    border:1px solid black;
+    border: 15px double #26094e;
     border-radius: 15px;
     width:80%;
     min-height:100vh;
     background-color: #EBDCF5;
-    margin:76px;
+    margin:auto;
     text-align: center;
     font-family:'Times New Roman', Times, serif;
 }
@@ -35,6 +35,7 @@ body{
     background: #F8F3FC;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 li{
     list-style: none;
@@ -76,4 +77,41 @@ input[type="checkbox"]{
 .completed{
     text-decoration: line-through;
     color: gray;
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #d9c5e8;
+  border-radius: 50px;
+  padding: 18px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 25px rgba(106, 76, 147, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6A4C93;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5b4a74;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #6A4C93;
+  border-bottom: 2px solid #6A4C93;
+  padding-bottom: 3px;
 }
