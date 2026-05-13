@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #F8F3FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* --- Header / Logo Area --- */
+.site-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.site-header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #6a4fbf;
+    letter-spacing: 1px;
+}
+
+.site-header .logo span {
+    color: #4a90d9;
+}
+
+/* --- Card / Form Box --- */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(106, 79, 191, 0.15);
+    padding: 36px 32px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.card h2 {
+    text-align: center;
+    color: #5c3db5;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.card .subtitle {
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+/* --- Form Elements --- */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #d5c8f0;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    background: #faf8ff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #8b6bd9;
+    background: #fff;
+}
+
+/* --- Primary Button --- */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #7c55d6, #5b8ee6);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 6px;
+    box-shadow: 0 4px 12px rgba(106, 79, 191, 0.3);
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* --- Redirect Link --- */
+.redirect-text {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #888;
+}
+
+.redirect-text a {
+    color: #6a4fbf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redirect-text a:hover {
+    text-decoration: underline;
+}
+
+/* --- Divider --- */
+.divider {
+    border: none;
+    border-top: 1px solid #ece6fa;
+    margin: 20px 0;
+}
+
+/* ================================
+   Quiz Page Specific Styles
+   ================================ */
+
+.quiz-card {
+    max-width: 560px;
+}
+
+.quiz-card h2 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.quiz-card .subtitle {
+    margin-bottom: 28px;
+}
+
+.question-block {
+    background: #f8f5ff;
+    border: 1.5px solid #e0d4f7;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+}
+
+.question-block p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a2fa0;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.15s;
+}
+
+.option-label:hover {
+    background: #ede7fb;
+}
+
+.option-label input[type="radio"] {
+    accent-color: #7c55d6;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.question-number {
+    display: inline-block;
+    background: linear-gradient(135deg, #7c55d6, #5b8ee6);
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 9px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+/* --- Footer --- */
+.site-footer {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+}
