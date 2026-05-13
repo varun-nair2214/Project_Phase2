@@ -153,13 +153,16 @@ body {
   min-width: 320px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-image img {
   width: 100%;
+  height: auto;
   max-width: 450px;
   border-radius: 30px;
   box-shadow: 0 20px 40px rgba(106, 76, 147, 0.15);
+  display: block;
 }
 
 --------------------------------------------------------------------
