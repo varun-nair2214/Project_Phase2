@@ -3,13 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Authors" content="Mehrin, Nithya, Rudra, Varun">
-    <meta name="Keywords" content="Study, Planner">
-    <link rel="icon" href="">
-    <link rel="stylesheet" href="Project-Phase2\Project_Phase2\stylesheet.css">
-    <title>EduTrack</title>
+    <title>Login – Smart Study Planner</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
+
 <body>
-    
+
+    <!-- Logo -->
+    <div class="site-header">
+        <div class="logo">📚<span>Edu</span>Track</div>
+    </div>
+
+    <!-- Login Card -->
+    <div class="card">
+
+        <h2>Welcome Back! 👋</h2>
+        <p class="subtitle">Login to continue your study journey</p>
+
+        <hr class="divider">
+
+        <!-- Login Form -->
+        <form>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="btn-primary">
+                Login →
+            </button>
+
+        </form>
+
+        <!-- Sign Up -->
+        <p class="redirect-text">
+            Don't have an account?
+            <a href="signup.html">Sign Up</a>
+        </p>
+
+    </div>
+
+    <p class="site-footer">
+        Smart Study Planner &copy; 2025
+    </p>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function(e) {
+
+            e.preventDefault();
+
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            // EMAIL VALIDATION
+            if (!email.includes("@")) {
+                alert("Email must contain @ symbol");
+                return;
+            }
+
+            // PASSWORD LENGTH
+            if (password.length < 8) {
+                alert("Password must contain at least 8 characters");
+                return;
+            }
+
+            // NUMBER CHECK
+            let numberCheck = /[0-9]/.test(password);
+
+            if (!numberCheck) {
+                alert("Password must contain at least one number");
+                return;
+            }
+
+            // SPECIAL CHARACTER CHECK
+            let specialCheck = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+            if (!specialCheck) {
+                alert("Password must contain at least one special character");
+                return;
+            }
+
+            // LOGIN CHECK
+            if (
+                email === "riya123@gmail.com" &&
+                password === "riya@123"
+            ) {
+
+                alert("Login Successful!");
+
+                // GO TO NEXT PAGE
+                window.location.href = "home.html";
+
+            } 
+            
+            else {
+
+                alert("Invalid Email or Password");
+
+            }
+
+        });
+
+    </script>
+
 </body>
 </html>
