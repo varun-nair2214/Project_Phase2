@@ -4,21 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Study Planner — Quiz App</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!--  SCREEN 1: HOME -->
   <div class="navbar">
     <div class="logo">EduTrack</div>
 
     <div class="nav-links">
-      <a href="home.html">Home</a>
+      <a href="index1.html">Home</a>
       <a href="profile.html">Profile</a>
       <a href="contact.html">Contact</a>
     </div>
-
   </div>
+
+  <!-- ========== SCREEN 1: HOME ========== -->
   <div id="homeScreen" class="screen active">
 
     <div class="logo">📚<span>Edu</span>Track</div>
@@ -44,7 +43,7 @@
   </div>
 
 
-  <!--  SCREEN 2: CREATE QUIZ  -->
+  <!-- ========== SCREEN 2: CREATE QUIZ ========== -->
   <div id="createScreen" class="screen">
 
     <div class="screen-top">
@@ -62,13 +61,13 @@
   </div>
 
 
-  <!--  SCREEN 3: QUIZ PLAY  -->
+  <!-- ========== SCREEN 3: QUIZ PLAY ========== -->
   <div id="quizScreen" class="screen">
 
     <div class="screen-top">
       <button class="btn-back" id="backFromQuiz">← Exit</button>
       <span id="questionCounter">Q 1 / 10</span>
-      <div class="timer-box">⏱ <span id="timerDisplay">15</span>s</div>
+      <div class="timer-box">⏱️ <span id="timerDisplay">15</span>s</div>
     </div>
 
     <!-- Progress Bar -->
@@ -90,7 +89,7 @@
   </div>
 
 
-  <!--  SCREEN 4: RESULT-->
+  <!-- ========== SCREEN 4: RESULT ========== -->
   <div id="resultScreen" class="screen">
 
     <div class="result-box">
@@ -122,7 +121,7 @@
         </div>
         <div class="stat-box skip-stat">
           <span id="statSkipped">0</span>
-          <small>⏭ Skipped</small>
+          <small>⏭️ Skipped</small>
         </div>
       </div>
 
@@ -137,6 +136,6 @@
   <!-- Simple toast message -->
   <div id="toast"></div>
 
-  <script src="../javascript/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
