@@ -1,5 +1,9 @@
 let notes = [];
 
+function saveNotes(){
+    localStorage.setItem("notes", JSON.stringify(notes));
+}
+
 function displayNotes() {
 
   let notesGrid =
@@ -80,6 +84,7 @@ function addNote() {
   };
 
   notes.push(note);
+  saveNotes();
 
   displayNotes();
 
@@ -108,6 +113,17 @@ function openNote(i){
 function deleteNote(i){
 
   notes.splice(i,1);
+  saveNotes();
 
   displayNotes();
 }
+
+window.onload = function () {
+    const savedNotes = localStorage.getItem("notes");
+
+    if (savedNotes) {
+        notes = JSON.parse(savedNotes);
+    }
+
+    displayNotes();
+};
