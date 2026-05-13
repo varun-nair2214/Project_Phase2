@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes - EduTrack</title>
+  <link rel="stylesheet" href="notes.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo">
+        
+        <div>
+          <h1>EduTrack</h1>
+          
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+       <a href="contact.html">Contact</a>
+        <a href="profile.html">Profile</a>
+        
+        
+      </nav>
+    </header>
+
+    <section class="notes-section">
+      <div class="left">
+        <h2>Study Notes</h2>
+        <p class="subtitle">
+          Create notes and attach external documents from your device.
+        </p>
+
+        <div class="form-card">
+          <h3>Create New Note</h3>
+
+          <input type="text" id="noteTitle" placeholder="Note title" />
+
+          <select id="noteSubject">
+            <option value="">Select Subject</option>
+            <option>Linear Algebra</option>
+            <option>Physics</option>
+            <option>OOPS</option>
+            <option>UID</option>
+            <option>Discrete Maths</option>
+          </select>
+
+          <textarea id="noteText" placeholder="Write your key points here..."></textarea>
+
+          <div class="file-box">
+            <label for="noteFile">Attach Document</label>
+            <input type="file" id="noteFile" accept=".pdf,.doc,.docx,.txt,.ppt,.pptx" />
+          </div>
+
+          <button onclick="addNote()">+ Save Note</button>
+        </div>
+
+        <div class="notes-grid" id="notesGrid">
+          
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="circle">
+          <h3 id="noteCount">0</h3>
+          <p>Total Notes</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Write it once. Revise anytime.</h3>
+          <p>
+            Keep your notes, summaries, and uploaded study documents organized in one place.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="notes.js"></script>
+</body>
+</html>
