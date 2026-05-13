@@ -1,8 +1,9 @@
 .Calender{
-    width:40%;
+    width:420px;
     margin:auto;
-    
-    background-color: rgb(255, 15, 151);
+    border-radius:20px;
+    padding:20px;
+    background-color: #C8A2C8;
     height:500px;
 }
 .Header{
@@ -13,9 +14,52 @@
     gap:15px;
 }
 body{
-    background: linear-gradient(45deg, red,blue);
+    background: #F8F3FC;
     display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+.days{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:10px;
+    padding:20px;
+}
+
+.day{
+    background:white;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.today{
+    background-color: #734da7;
+    color:white;
+}
+
+.weekdays{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:10px;
+    padding:20px;
+    padding-bottom:0;
+}
+
+.weekdays div{
+    text-align:center;
+    font-weight:bold;
+    color:white;
+}
+.clicked{
+    background-color: #806f9b;
+    color:white;
+}
+#Prev{
+    background-color: #a494be;
+}
+#next{
+    background-color: #a494be;
 }
