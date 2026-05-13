@@ -15,9 +15,9 @@ The core features of this website are:
 9) Home: The home page is the cluster of all the aforementioned features. It shows the progress of the student in their academic journey.
 
 Team members and theri roles:
-1) Mehrin S =
-2) Nithya Ajay = Created the bookmark page, notes page
-3) Rudra Rajagopal = Created the homepage
+1) Mehrin S = Create Login ,SignUp and Quiz page.
+2) Nithya Ajay = Created the bookmark page, notes page and contact page.
+3) Rudra Rajagopal = Created the homepage,profile and progress.
 4) Varun Nair = Created the timer page, calendar and reminder page
 
 Technologies used:
