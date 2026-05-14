@@ -100,8 +100,8 @@ function updateAvatar(name) {
 
 function loadProfile() {
   const defaultData = {
-    profileName: 'Anandu',
-    profilePlace: 'Thrissur, Kerala',
+    profileName: 'Riya',
+    profilePlace: 'Kollam, Kerala',
     profileSkills: 'HTML, CSS, JavaScript, C++',
     profileAbout:
       'Passionate student who enjoys coding, mathematics, and sports.'
