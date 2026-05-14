@@ -74,18 +74,17 @@ var questions = [
 ];
 
 
-// ── QUIZ STATE ────────────────────────────────
-// Variables that keep track of the current quiz
-var currentIndex = 0;   // which question we are on
-var score        = 0;   // number of correct answers
-var wrong        = 0;   // number of wrong answers
-var skipped      = 0;   // number of timed-out questions
-var answered     = false; // has this question been answered?
-var timerInterval = null; // holds the setInterval reference
-var timeLeft     = 0;   // seconds remaining on timer
-var activeQuestions = []; // the questions being used in this quiz
-var isCustom     = false; // true if this is a user-created quiz
-var TIMER_SECS   = 15;  // seconds allowed per question
+
+var currentIndex = 0;   
+var score        = 0;  
+var wrong        = 0;   
+var skipped      = 0;   
+var answered     = false; 
+var timerInterval = null; 
+var timeLeft     = 0;   
+var activeQuestions = []; 
+var isCustom     = false; 
+var TIMER_SECS   = 15;  
 
 // For builder
 var builderList = []; // array of question objects being built
@@ -311,9 +310,6 @@ function syncBuilder() {
 }
 
 
-// =============================================
-// QUIZ ENGINE — Running the Quiz
-// =============================================
 
 // Start a quiz with the given array of questions
 function startQuiz(qs) {
@@ -414,9 +410,6 @@ document.getElementById("nextBtn").addEventListener("click", function() {
 });
 
 
-// =============================================
-// TIMER
-// =============================================
 
 function startTimer() {
   timeLeft = TIMER_SECS;
@@ -442,7 +435,7 @@ function stopTimer() {
 
 function updateTimerUI() {
   var display = document.getElementById("timerDisplay");
-  var box     = display.parentElement; // .timer-box
+  var box     = display.parentElement; 
   display.textContent = timeLeft;
 
   box.classList.remove("warning", "danger");
@@ -466,9 +459,6 @@ function handleTimeout() {
 }
 
 
-// =============================================
-// RESULT SCREEN
-// =============================================
 
 function showResult() {
   stopTimer();
@@ -507,11 +497,7 @@ document.getElementById("restartBtn").addEventListener("click", function() {
 });
 
 
-// =============================================
-// UTILITY
-// =============================================
 
-// Prevent XSS: converts special characters in user text before inserting into HTML
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, "&amp;")
