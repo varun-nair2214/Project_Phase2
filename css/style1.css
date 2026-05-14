@@ -86,9 +86,12 @@ body {
     gap: 80px;
     width: 100%;
     margin-top: 40px;
+    line-height: 4rem;
 }
 
 .hero-text {
+    margin-top: 20px;
+    margin-left: 20px;
     flex: 1;
     max-width: 50%;
     display: flex;
@@ -96,6 +99,9 @@ body {
     justify-content: center;
 }
 
+.hero-buttons{
+  margin-top: 30px;
+}
 
 .btn {
   text-decoration: none;
