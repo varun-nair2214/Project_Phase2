@@ -24,3 +24,4 @@ Team members and theri roles:
 
 Technologies used:
 The technologies used in the creation of this website include the languages: HTML, CSS and JavaScript. 
+Additional Features used include Font Awesome, chart.js, Local storage
