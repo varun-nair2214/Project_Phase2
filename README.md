@@ -15,6 +15,7 @@ The core features of this website are:
 9) SignUp: A signup page for students using the website for the first time.
 10) Profile: Students get to update their own profiles for individuality.
 11) Home: The home page is the cluster of all the aforementioned features. It shows the progress of the student in their academic journey.
+12) Progress: Students can check how many tasks they have got to do. It is updated according to the increase in and decrease in tasks.
 
 Team members and theri roles:
 1) Mehrin S = Create Login ,SignUp and Quiz page.
